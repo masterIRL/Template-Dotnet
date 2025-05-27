@@ -1,0 +1,4 @@
+Limitations liées à MAUI:
+Android 5 (API 21) minimum
+IOS 10 minimum
+Windows 11 ou Windows 10 v1809 minimum (lib Win UI 3)
