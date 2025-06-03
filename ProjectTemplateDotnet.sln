@@ -1,0 +1,34 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32328.120
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectTemplateDotnet.Domain", "src\Core\ProjectTemplateDotnet.Domain\ProjectTemplateDotnet.Domain.csproj", "{78999999-9999-9999-9999-999999999999}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectTemplateDotnet.Application", "src\Core\ProjectTemplateDotnet.Application\ProjectTemplateDotnet.Application.csproj", "{78999999-9999-9999-9999-999999999999}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectTemplateDotnet.Infrastructure.CrossCutting", "src\Infrastructure\ProjectTemplateDotnet.Infrastructure.CrossCutting\ProjectTemplateDotnet.Infrastructure.CrossCutting.csproj", "{78999999-9999-9999-9999-999999999999}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectTemplateDotnet.Infrastructure.Identity", "src\Infrastructure\ProjectTemplateDotnet.Infrastructure.Identity\ProjectTemplateDotnet.Infrastructure.Identity.csproj", "{78999999-9999-9999-9999-999999999999}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectTemplateDotnet.Infrastructure.Persistence.EFCore", "src\Infrastructure\ProjectTemplateDotnet.Infrastructure.Persistence.EFCore\ProjectTemplateDotnet.Infrastructure.Persistence.EFCore.csproj", "{78999999-9999-9999-9999-999999999999}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectTemplateDotnet.Infrastructure.Persistence.Dapper", "src\Infrastructure\ProjectTemplateDotnet.Infrastructure.Persistence.Dapper\ProjectTemplateDotnet.Infrastructure.Persistence.Dapper.csproj", "{78999999-9999-9999-9999-999999999999}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectTemplateDotnet.Infrastructure.Realtime.SignalR", "src\Infrastructure\ProjectTemplateDotnet.Infrastructure.Realtime.SignalR\ProjectTemplateDotnet.Infrastructure.Realtime.SignalR.csproj", "{78999999-9999-9999-9999-999999999999}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectTemplateDotnet.Infrastructure.AnalyticsStub", "src\Infrastructure\ProjectTemplateDotnet.Infrastructure.AnalyticsStub\ProjectTemplateDotnet.Infrastructure.AnalyticsStub.csproj", "{78999999-9999-9999-9999-999999999999}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectTemplateDotnet.Api", "src\Api\ProjectTemplateDotnet.Api\ProjectTemplateDotnet.Api.csproj", "{78999999-9999-9999-9999-999999999999}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectTemplateDotnet.Maui", "src\Client\ProjectTemplateDotnet.Maui\ProjectTemplateDotnet.Maui.csproj", "{78999999-9999-9999-9999-999999999999}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectTemplateDotnet.Domain.UnitTests", "src\Tests\ProjectTemplateDotnet.Domain.UnitTests\ProjectTemplateDotnet.Domain.UnitTests.csproj", "{78999999-9999-9999-9999-999999999999}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectTemplateDotnet.Application.UnitTests", "src\Tests\ProjectTemplateDotnet.Application.UnitTests\ProjectTemplateDotnet.Application.UnitTests.csproj", "{78999999-9999-9999-9999-999999999999}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectTemplateDotnet.Infrastructure.UnitTests", "src\Tests\ProjectTemplateDotnet.Infrastructure.UnitTests\ProjectTemplateDotnet.Infrastructure.UnitTests.csproj", "{78999999-9999-9999-9999-999999999999}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectTemplateDotnet.Api.IntegrationTests", "src\Tests\ProjectTemplateDotnet.Api.IntegrationTests\ProjectTemplateDotnet.Api.IntegrationTests.csproj", "{78999999-9999-9999-9999-999999999999}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectTemplateDotnet.Maui.UnitTests", "src\Tests\ProjectTemplateDotnet.Maui.UnitTests\ProjectTemplateDotnet.Maui.UnitTests.csproj", "{78999999-9999-9999-9999-999999999999}"
+EndProject

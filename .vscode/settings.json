@@ -1,0 +1,13 @@
+{
+    "kilo-code.allowedCommands": [
+        "npm test",
+        "npm install",
+        "tsc",
+        "git log",
+        "git diff",
+        "git show",
+        "dotnet build",
+        "dotnet run"
+    ],
+    "kilo-code.vsCodeLmModelSelector": {}
+}

@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+	<Style x:Key="BaseStyle" TargetType="Label">
+		<Setter Property="FontFamily" Value="OpenSansRegular" />
+		<Setter Property="FontSize" Value="16" />
+		<Setter Property="TextColor" Value="{StaticResource TextPrimary}" />
+	</Style>
+
+	<Style x:Key="ButtonStyle" TargetType="Button" BasedOn="{StaticResource BaseStyle}">
+		<Setter Property="BackgroundColor" Value="{StaticResource Primary}" />
+		<Setter Property="TextColor" Value="White" />
+		<Setter Property="CornerRadius" Value="8" />
+		<Setter Property="Padding" Value="10, 5" />
+	</Style>
+
+	<Style x:Key="EntryStyle" TargetType="Entry" BasedOn="{StaticResource BaseStyle}">
+		<Setter Property="Placeholder" Value="Enter text" />
+		<Setter Property="PlaceholderColor" Value="{StaticResource TextSecondary}" />
+		<Setter Property="BackgroundColor" Value="White" />
+		<Setter Property="BorderColor" Value="{StaticResource Border}" />
+		<Setter Property="CornerRadius" Value="8" />
+		<Setter Property="Padding" Value="10, 5" />
+	</Style>
+
+	<Style x:Key="CardStyle" TargetType="Frame">
+		<Setter Property="BackgroundColor" Value="White" />
+		<Setter Property="BorderColor" Value="{StaticResource Border}" />
+		<Setter Property="CornerRadius" Value="8" />
+		<Setter Property="Padding" Value="10" />
+		<Setter Property="Shadow" Value="0, 0, 10, 0, Black" />
+	</Style>
+
+	<Style x:Key="ToastStyle" TargetType="Frame">
+		<Setter Property="BackgroundColor" Value="{StaticResource Primary}" />
+		<Setter Property="CornerRadius" Value="8" />
+		<Setter Property="Padding" Value="10" />
+		<Setter Property="Shadow" Value="0, 0, 10, 0, Black" />
+	</Style>
+
+	<Style x:Key="EmptyStateStyle" TargetType="StackLayout">
+		<Setter Property="VerticalOptions" Value="CenterAndExpand" />
+		<Setter Property="HorizontalOptions" Value="CenterAndExpand" />
+		<Setter Property="Spacing" Value="10" />
+	</Style>
+
+	<Style x:Key="SearchBarStyle" TargetType="SearchBar" BasedOn="{StaticResource BaseStyle}">
+		<Setter Property="Placeholder" Value="Search products..." />
+		<Setter Property="BackgroundColor" Value="White" />
+		<Setter Property="BorderColor" Value="{StaticResource Border}" />
+		<Setter Property="CornerRadius" Value="8" />
+		<Setter Property="Padding" Value="10, 5" />
+	</Style>
+
+	<Style x:Key="FormStyle" TargetType="StackLayout">
+		<Setter Property="Spacing" Value="10" />
+		<Setter Property="Padding" Value="10" />
+	</Style>
+
+	<Style x:Key="HeaderStyle" TargetType="Label" BasedOn="{StaticResource BaseStyle}">
+		<Setter Property="FontSize" Value="24" />
+		<Setter Property="FontAttributes" Value="Bold" />
+	</Style>
+
+	<Style x:Key="SubheaderStyle" TargetType="Label" BasedOn="{StaticResource BaseStyle}">
+		<Setter Property="FontSize" Value="18" />
+		<Setter Property="FontAttributes" Value="Bold" />
+	</Style>
+
+	<Style x:Key="BodyStyle" TargetType="Label" BasedOn="{StaticResource BaseStyle}">
+		<Setter Property="FontSize" Value="16" />
+	</Style>
+
+	<Style x:Key="CaptionStyle" TargetType="Label" BasedOn="{StaticResource BaseStyle}">
+		<Setter Property="FontSize" Value="14" />
+		<Setter Property="TextColor" Value="{StaticResource TextSecondary}" />
+	</Style>
+
+	<Style x:Key="ErrorStyle" TargetType="Label" BasedOn="{StaticResource BaseStyle}">
+		<Setter Property="TextColor" Value="{StaticResource Error}" />
+	</Style>
+
+	<Style x:Key="SuccessStyle" TargetType="Label" BasedOn="{StaticResource BaseStyle}">
+		<Setter Property="TextColor" Value="{StaticResource Success}" />
+	</Style>
+
+	<Style x:Key="WarningStyle" TargetType="Label" BasedOn="{StaticResource BaseStyle}">
+		<Setter Property="TextColor" Value="{StaticResource Warning}" />
+	</Style>
+
+	<Style x:Key="InfoStyle" TargetType="Label" BasedOn="{StaticResource BaseStyle}">
+		<Setter Property="TextColor" Value="{StaticResource Info}" />
+	</Style>
+
+	<Style x:Key="LoadingIndicatorStyle" TargetType="ActivityIndicator">
+		<Setter Property="Color" Value="{StaticResource Primary}" />
+	</Style>
+
+	<Style x:Key="SkeletonScreenStyle" TargetType="Frame">
+		<Setter Property="BackgroundColor" Value="{StaticResource Border}" />
+		<Setter Property="CornerRadius" Value="8" />
+		<Setter Property="Padding" Value="10" />
+	</Style>
+
+	<Style x:Key="TabBarStyle" TargetType="TabBar">
+		<Setter Property="BackgroundColor" Value="White" />
+		<Setter Property="UnselectedTabColor" Value="{StaticResource TextSecondary}" />
+		<Setter Property="SelectedTabColor" Value="{StaticResource Primary}" />
+	</Style>
+
+	<Style x:Key="FlyoutMenuStyle" TargetType="FlyoutPage">
+		<Setter Property="BackgroundColor" Value="White" />
+		<Setter Property="FlyoutLayoutBehavior" Value="Split" />
+	</Style>
+
+	<Style x:Key="BottomTabBarStyle" TargetType="TabBar">
+		<Setter Property="BackgroundColor" Value="White" />
+		<Setter Property="UnselectedTabColor" Value="{StaticResource TextSecondary}" />
+		<Setter Property="SelectedTabColor" Value="{StaticResource Primary}" />
+	</Style>
+
+	<Style x:Key="HeaderBarStyle" TargetType="BoxView">
+		<Setter Property="BackgroundColor" Value="{StaticResource Primary}" />
+		<Setter Property="HeightRequest" Value="50" />
+	</Style>
+
+	<Style x:Key="BackButtonStyle" TargetType="Button" BasedOn="{StaticResource ButtonStyle}">
+		<Setter Property="BackgroundColor" Value="Transparent" />
+		<Setter Property="TextColor" Value="White" />
+		<Setter Property="FontSize" Value="18" />
+		<Setter Property="Padding" Value="0, 0, 0, 0" />
+	</Style>
+
+	<Style x:Key="ActionIconStyle" TargetType="Image" BasedOn="{StaticResource BaseStyle}">
+		<Setter Property="Aspect" Value="AspectFit" />
+		<Setter Property="HeightRequest" Value="24" />
+		<Setter Property="WidthRequest" Value="24" />
+	</Style>
+
+	<Style x:Key="ProductCardStyle" TargetType="Frame" BasedOn="{StaticResource CardStyle}">
+		<Setter Property="Padding" Value="10, 10, 10, 20" />
+	</Style>
+
+	<Style x:Key="ProductImageStyle" TargetType="Image" BasedOn="{StaticResource BaseStyle}">
+		<Setter Property="Aspect" Value="AspectFill" />
+		<Setter Property="HeightRequest" Value="200" />
+	</Style>
+
+	<Style x:Key="ProductNameStyle" TargetType="Label" BasedOn="{StaticResource HeaderStyle}" />
+	<Style x:Key="ProductDescriptionStyle" TargetType="Label" BasedOn="{StaticResource BodyStyle}" />
+	<Style x:Key="ProductPriceStyle" TargetType="Label" BasedOn="{StaticResource SubheaderStyle}" />
+
+	<Style x:Key="AddToCartButtonStyle" TargetType="Button" BasedOn="{StaticResource ButtonStyle}">
+		<Setter Property="BackgroundColor" Value="{StaticResource Secondary}" />
+		<Setter Property="TextColor" Value="White" />
+		<Setter Property="FontSize" Value="14" />
+		<Setter Property="Padding" Value="5, 2" />
+	</Style>
+
+	<Style x:Key="QuantitySelectorStyle" TargetType="Stepper" BasedOn="{StaticResource BaseStyle}">
+		<Setter Property="Minimum" Value="1" />
+		<Setter Property="Maximum" Value="100" />
+	</Style>
+
+	<Style x:Key="OrderItemCardStyle" TargetType="Frame" BasedOn="{StaticResource CardStyle}">
+		<Setter Property="Padding" Value="10, 10, 10, 20" />
+	</Style>
+
+	<Style x:Key="OrderItemImageStyle" TargetType="Image" BasedOn="{StaticResource BaseStyle}">
+		<Setter Property="Aspect" Value="AspectFill" />
+		<Setter Property="HeightRequest" Value="80" />
+		<Setter Property="WidthRequest" Value="80" />
+	</Style>
+
+	<Style x:Key="OrderItemNameStyle" TargetType="Label" BasedOn="{StaticResource HeaderStyle}" />
+	<Style x:Key="OrderItemPriceStyle" TargetType="Label" BasedOn="{StaticResource SubheaderStyle}" />
+	<Style x:Key="OrderItemQuantityStyle" TargetType="Label" BasedOn="{StaticResource BodyStyle}" />
+	<Style x:Key="OrderItemSubtotalStyle" TargetType="Label" BasedOn="{StaticResource SubheaderStyle}" />
+
+	<Style x:Key="RemoveItemButtonStyle" TargetType="Button" BasedOn="{StaticResource ButtonStyle}">
+		<Setter Property="BackgroundColor" Value="{StaticResource Error}" />
+		<Setter Property="TextColor" Value="White" />
+		<Setter Property="FontSize" Value="14" />
+		<Setter Property="Padding" Value="5, 2" />
+	</Style>
+
+	<Style x:Key="OrderSummaryStyle" TargetType="StackLayout" BasedOn="{StaticResource BaseStyle}">
+		<Setter Property="Spacing" Value="5" />
+		<Setter Property="Padding" Value="10, 0, 10, 10" />
+	</Style>
+
+	<Style x:Key="OrderTotalStyle" TargetType="Label" BasedOn="{StaticResource HeaderStyle}">
+		<Setter Property="FontSize" Value="20" />
+	</Style>
+
+	<Style x:Key="CheckoutButtonStyle" TargetType="Button" BasedOn="{StaticResource ButtonStyle}">
+		<Setter Property="FontSize" Value="18" />
+		<Setter Property="Padding" Value="10, 5" />
+	</Style>
+
+	<Style x:Key="EmptyCartStyle" TargetType="StackLayout" BasedOn="{StaticResource EmptyStateStyle}">
+		<Setter Property="Spacing" Value="20" />
+	</Style>
+
+	<Style x:Key="ShippingAddressStyle" TargetType="StackLayout" BasedOn="{StaticResource BaseStyle}">
+		<Setter Property="Spacing" Value="5" />
+		<Setter Property="Padding" Value="10" />
+	</Style>
+
+	<Style x:Key="PaymentMethodStyle" TargetType="StackLayout" BasedOn="{StaticResource BaseStyle}">
+		<Setter Property="Spacing" Value="5" />
+		<Setter Property="Padding" Value="10" />
+	</Style>
+
+	<Style x:Key="OrderConfirmationStyle" TargetType="StackLayout" BasedOn="{StaticResource BaseStyle}">
+		<Setter Property="Spacing" Value="10" />
+		<Setter Property="Padding" Value="20" />
+	</Style>
+
+	<Style x:Key="OrderHistoryStyle" TargetType="CollectionView" BasedOn="{StaticResource BaseStyle}">
+		<Setter Property="SelectionMode" Value="None" />
+	</Style>
+
+	<Style x:Key="OrderHistoryCardStyle" TargetType="Frame" BasedOn="{StaticResource CardStyle}">
+		<Setter Property="Padding" Value="10, 10, 10, 20" />
+	</Style>
+
+	<Style x:Key="OrderHistoryItemStyle" TargetType="Label" BasedOn="{StaticResource BodyStyle}" />
+	<Style x:Key="OrderHistoryDateStyle" TargetType="Label" BasedOn="{StaticResource CaptionStyle}" />
+	<Style x:Key="OrderHistoryTotalStyle" TargetType="Label" BasedOn="{StaticResource SubheaderStyle}" />
+	<Style x:Key="OrderHistoryStatusStyle" TargetType="Label" BasedOn="{StaticResource CaptionStyle}">
+		<Setter Property="BackgroundColor" Value="{StaticResource Border}" />
+		<Setter Property="TextColor" Value="White" />
+		<Setter Property="CornerRadius" Value="8" />
+		<Setter Property="Padding" Value="5, 2" />
+	</Style>
+
+	<Style x:Key="OrderDetailStyle" TargetType="StackLayout" BasedOn="{StaticResource BaseStyle}">
+		<Setter Property="Spacing" Value="10" />
+		<Setter Property="Padding" Value="20" />
+	</Style>
+
+	<Style x:Key="OrderDetailItemStyle" TargetType="Label" BasedOn="{StaticResource BodyStyle}" />
+	<Style x:Key="OrderDetailDateStyle" TargetType="Label" BasedOn="{StaticResource CaptionStyle}" />
+	<Style x:Key="OrderDetailStatusStyle" TargetType="Label" BasedOn="{StaticResource SubheaderStyle}" />
+	<Style x:Key="OrderDetailHistoryStyle" TargetType="Label" BasedOn="{StaticResource CaptionStyle}" />
+
+	<Style x:Key="LoginStyle" TargetType="StackLayout" BasedOn="{StaticResource FormStyle}">
+		<Setter Property="Spacing" Value="15" />
+		<Setter Property="Padding" Value="20" />
+	</Style>
+
+	<Style x:Key="RegistrationStyle" TargetType="StackLayout" BasedOn="{StaticResource FormStyle}">
+		<Setter Property="Spacing" Value="15" />
+		<Setter Property="Padding" Value="20" />
+	</Style>
+
+	<Style x:Key="ForgotPasswordStyle" TargetType="StackLayout" BasedOn="{StaticResource FormStyle}">
+		<Setter Property="Spacing" Value="15" />
+		<Setter Property="Padding" Value="20" />
+	</Style>
+
+	<Style x:Key="ResetPasswordStyle" TargetType="StackLayout" BasedOn="{StaticResource FormStyle}">
+		<Setter Property="Spacing" Value="15" />
+		<Setter Property="Padding" Value="20" />
+	</Style>
+
+	<Style x:Key="ProfileStyle" TargetType="StackLayout" BasedOn="{StaticResource BaseStyle}">
+		<Setter Property="Spacing" Value="10" />
+		<Setter Property="Padding" Value="20" />
+	</Style>
+
+	<Style x:Key="SettingsStyle" TargetType="StackLayout" BasedOn="{StaticResource BaseStyle}">
+		<Setter Property="Spacing" Value="10" />
+		<Setter Property="Padding" Value="20" />
+	</Style>
+
+	<Style x:Key="LanguagePickerStyle" TargetType="Picker" BasedOn="{StaticResource BaseStyle}">
+		<Setter Property="Title" Value="Language" />
+		<Setter Property="TitleColor" Value="{StaticResource TextPrimary}" />
+	</Style>
+
+	<Style x:Key="NotificationSwitchStyle" TargetType="Switch" BasedOn="{StaticResource BaseStyle}">
+		<Setter Property="OnColor" Value="{StaticResource Success}" />
+		<Setter Property="ThumbColor" Value="White" />
+	</Style>
+
+	<Style x:Key="ThemePickerStyle" TargetType="Picker" BasedOn="{StaticResource BaseStyle}">
+		<Setter Property="Title" Value="Theme" />
+		<Setter Property="TitleColor" Value="{StaticResource TextPrimary}" />
+	</Style>
+
+	<Style x:Key="ClearDataButtonStyle" TargetType="Button" BasedOn="{StaticResource ButtonStyle}">
+		<Setter Property="BackgroundColor" Value="{StaticResource Warning}" />
+		<Setter Property="TextColor" Value="White" />
+		<Setter Property="FontSize" Value="16" />
+		<Setter Property="Padding" Value="10, 5" />
+	</Style>
+
+	<Style x:Key="AppVersionStyle" TargetType="Label" BasedOn="{StaticResource CaptionStyle}" />
+
+	<Style x:Key="SplashScreenStyle" TargetType="ContentPage">
+		<Setter Property="BackgroundColor" Value="{StaticResource Primary}" />
+		<Setter Property="Padding" Value="0" />
+	</Style>
+
+	<Style x:Key="OnboardingStyle" TargetType="ContentPage">
+		<Setter Property="BackgroundColor" Value="White" />
+		<Setter Property="Padding" Value="0" />
+	</Style>
+
+	<Style x:Key="OnboardingItemStyle" TargetType="StackLayout" BasedOn="{StaticResource BaseStyle}">
+		<Setter Property="Spacing" Value="20" />
+		<Setter Property="Padding" Value="20" />
+	</Style>
+
+	<Style x:Key="OnboardingImageStyle" TargetType="Image" BasedOn="{StaticResource BaseStyle}">
+		<Setter Property="Aspect" Value="AspectFit" />
+		<Setter Property="HeightRequest" Value="200" />
+	</Style>
+
+	<Style x:Key="OnboardingHeadlineStyle" TargetType="Label" BasedOn="{StaticResource HeaderStyle}" />
+	<Style x:Key="OnboardingBodyStyle" TargetType="Label" BasedOn="{StaticResource BodyStyle}" />
+
+	<Style x:Key="OnboardingPageIndicatorStyle" TargetType="BoxView" BasedOn="{StaticResource BaseStyle}">
+		<Setter Property="WidthRequest" Value="10" />
+		<Setter Property="HeightRequest" Value="10" />
+		<Setter Property="CornerRadius" Value="5" />
+	</Style>
+
+	<Style x:Key="OnboardingButtonStyle" TargetType="Button" BasedOn="{StaticResource ButtonStyle}">
+		<Setter Property="FontSize" Value="18" />
+		<Setter Property="Padding" Value="10, 5" />
+	</Style>
+
+	<Style x:Key="ProductListStyle" TargetType="CollectionView" BasedOn="{StaticResource BaseStyle}">
+		<Setter Property="SelectionMode" Value="None" />
+	</Style>
+
+	<Style x:Key="ProductDetailStyle" TargetType="ScrollView" BasedOn="{StaticResource BaseStyle}">
+		<Setter Property="Content" Value="{StaticResource ProductDetailContent}" />
+	</Style>
+
+	<Style x:Key="ProductDetailContentStyle" TargetType="StackLayout" BasedOn="{StaticResource BaseStyle}">
+		<Setter Property="Spacing" Value="10" />
+		<Setter Property="Padding" Value="20" />
+	</Style>
+
+	<Style x:Key="ProductImageCarouselStyle" TargetType="CarouselView" BasedOn="{StaticResource BaseStyle}">
+		<Setter Property="PeekAreaInsets" Value="0" />
+	</Style>
+
+	<Style x:Key="ProductDetailNameStyle" TargetType="Label" BasedOn="{StaticResource HeaderStyle}" />
+	<Style x:Key="ProductDetailDescriptionStyle" TargetType="Label" BasedOn="{StaticResource BodyStyle}" />
+	<Style x:Key="ProductDetailPriceStyle" TargetType="Label" BasedOn="{StaticResource SubheaderStyle}" />
+
+	<Style x:Key="QuantitySelectorLabelStyle" TargetType="Label" BasedOn="{StaticResource CaptionStyle}" />
+	<Style x:Key="QuantitySelectorEntryStyle" TargetType="Entry" BasedOn="{StaticResource EntryStyle}">
+		<Setter Property="Keyboard" Value="Numeric" />
+		<Setter Property="TextColor" Value="{StaticResource TextPrimary}" />
+	</Style>
+
+	<Style x:Key="AddToOrderButtonStyle" TargetType="Button" BasedOn="{StaticResource ButtonStyle}">
+		<Setter Property="FontSize" Value="18" />
+		<Setter Property="Padding" Value="10, 5" />
+	</Style>
+
+	<Style x:Key="CartScreenStyle" TargetType="ContentPage" BasedOn="{StaticResource BaseStyle}">
+		<Setter Property="Padding" Value="0" />
+	</Style>
+
+	<Style x:Key="CartItemListStyle" TargetType="CollectionView" BasedOn="{StaticResource BaseStyle}">
+		<Setter Property="SelectionMode" Value="None" />
+	</Style>
+
+	<Style x:Key="CartOrderSummaryStyle" TargetType="StackLayout" BasedOn="{StaticResource OrderSummaryStyle}" />
+	<Style x:Key="CartProceedToCheckoutStyle" TargetType="Button" BasedOn="{StaticResource CheckoutButtonStyle}" />
+
+	<Style x:Key="CheckoutFlowStyle" TargetType="ContentPage" BasedOn="{StaticResource BaseStyle}">
+		<Setter Property="Padding" Value="0" />
+	</Style>
+
+	<Style x:Key="ShippingAddressScreenStyle" TargetType="ContentPage" BasedOn="{StaticResource BaseStyle}">
+		<Setter Property="Padding" Value="0" />
+	</Style>
+
+	<Style x:Key="AddressListStyle" TargetType="CollectionView" BasedOn="{StaticResource BaseStyle}">
+		<Setter Property="SelectionMode" Value="Single" />
+	</Style>
+
+	<Style x:Key="AddressCardStyle" TargetType="Frame" BasedOn="{StaticResource CardStyle}">
+		<Setter Property="Padding" Value="10, 10, 10, 20" />
+	</Style>
+
+	<Style x:Key="AddressFormStyle" TargetType="StackLayout" BasedOn="{StaticResource FormStyle}">
+		<Setter Property="Spacing" Value="10" />
+		<Setter Property="Padding" Value="20" />
+	</Style>
+
+	<Style x:Key="AddressEntryStyle" TargetType="Entry" BasedOn="{StaticResource EntryStyle}" />
+	<Style x:Key="AddressPickerStyle" TargetType="Picker" BasedOn="{StaticResource BaseStyle}" />
+	<Style x:Key="AddressSwitchStyle" TargetType="Switch" BasedOn="{StaticResource BaseStyle}">
+		<Setter Property="OnColor" Value="{StaticResource Success}" />
+		<Setter Property="ThumbColor" Value="White" />
+	</Style>
+
+	<Style x:Key="ContinueToPaymentStyle" TargetType="Button" BasedOn="{StaticResource ButtonStyle}">
+		<Setter Property="FontSize" Value="18" />
+		<Setter Property="Padding" Value="10, 5" />
+	</Style>
+
+	<Style x:Key="PaymentMethodScreenStyle" TargetType="ContentPage" BasedOn="{StaticResource BaseStyle}">
+		<Setter Property="Padding" Value="0" />
+	</Style>
+
+	<Style x:Key="PaymentListStyle" TargetType="CollectionView" BasedOn="{StaticResource BaseStyle}">
+		<Setter Property="SelectionMode" Value="Single" />
+	</Style>
+
+	<Style x:Key="PaymentCardStyle" TargetType="Frame" BasedOn="{StaticResource CardStyle}">
+		<Setter Property="Padding" Value="10, 10, 10, 20" />
+	</Style>
+
+	<Style x:Key="PaymentFormStyle" TargetType="StackLayout" BasedOn="{StaticResource FormStyle}">
+		<Setter Property="Spacing" Value="10" />
+		<Setter Property="Padding" Value="20" />
+	</Style>
+
+	<Style x:Key="PaymentPickerStyle" TargetType="Picker" BasedOn="{StaticResource BaseStyle}" />
+	<Style x:Key="PaymentSwitchStyle" TargetType="Switch" BasedOn="{StaticResource BaseStyle}">
+		<Setter Property="OnColor" Value="{StaticResource Success}" />
+		<Setter Property="ThumbColor" Value="White" />
+	</Style>
+
+	<Style x:Key="ContinueToReviewStyle" TargetType="Button" BasedOn="{StaticResource ButtonStyle}">
+		<Setter Property="FontSize" Value="18" />
+		<Setter Property="Padding" Value="10, 5" />
+	</Style>
+
+	<Style x:Key="OrderSummaryScreenStyle" TargetType="ContentPage" BasedOn="{StaticResource BaseStyle}">
+		<Setter Property="Padding" Value="0" />
+	</Style>
+
+	<Style x:Key="OrderSummarySectionStyle" TargetType="StackLayout" BasedOn="{StaticResource BaseStyle}">
+		<Setter Property="Spacing" Value="10" />
+		<Setter Property="Padding" Value="20" />
+	</Style>
+
+	<Style x:Key="OrderSummaryItemStyle" TargetType="Label" BasedOn="{StaticResource BodyStyle}" />
+	<Style x:Key="OrderSummaryTotalStyle" TargetType="Label" BasedOn="{StaticResource OrderTotalStyle}" />
+
+	<Style x:Key="PlaceOrderButtonStyle" TargetType="Button" BasedOn="{StaticResource ButtonStyle}">
+		<Setter Property="FontSize" Value="18" />
+		<Setter Property="Padding" Value="10, 5" />
+	</Style>
+
+	<Style x:Key="OrderSuccessStyle" TargetType="ContentPage" BasedOn="{StaticResource BaseStyle}">
+		<Setter Property="Padding" Value="0" />
+	</Style>
+
+	<Style x:Key="OrderSuccessIconStyle" TargetType="Image" BasedOn="{StaticResource BaseStyle}">
+		<Setter Property="Aspect" Value="AspectFit" />
+		<Setter Property="HeightRequest" Value="100" />
+	</Style>
+
+	<Style x:Key="OrderSuccessHeadlineStyle" TargetType="Label" BasedOn="{StaticResource HeaderStyle}" />
+	<Style x:Key="OrderSuccessMessageStyle" TargetType="Label" BasedOn="{StaticResource BodyStyle}" />
+
+	<Style x:Key="OrderSuccessButtonStyle" TargetType="Button" BasedOn="{StaticResource ButtonStyle}">
+		<Setter Property="FontSize" Value="18" />
+		<Setter Property="Padding" Value="10, 5" />
+	</Style>
+
+	<Style x:Key="OrderFailureStyle" TargetType="ContentPage" BasedOn="{StaticResource BaseStyle}">
+		<Setter Property="Padding" Value="0" />
+	</Style>
+
+	<Style x:Key="OrderFailureIconStyle" TargetType="Image" BasedOn="{StaticResource BaseStyle}">
+		<Setter Property="Aspect" Value="AspectFit" />
+		<Setter Property="HeightRequest" Value="100" />
+	</Style>
+
+	<Style x:Key="OrderFailureHeadlineStyle" TargetType="Label" BasedOn="{StaticResource HeaderStyle}" />
+	<Style x:Key="OrderFailureMessageStyle" TargetType="Label" BasedOn="{StaticResource BodyStyle}" />
+
+	<Style x:Key="RetryPaymentButtonStyle" TargetType="Button" BasedOn="{StaticResource ButtonStyle}">
+		<Setter Property="BackgroundColor" Value="{StaticResource Warning}" />
+		<Setter Property="TextColor" Value="White" />
+		<Setter Property="FontSize" Value="18" />
+		<Setter Property="Padding" Value="10, 5" />
+	</Style>
+
+	<Style x:Key="ViewCartButtonStyle" TargetType="Button" BasedOn="{StaticResource ButtonStyle}">
+		<Setter Property="FontSize" Value="18" />
+		<Setter Property="Padding" Value="10, 5" />
+	</Style>
+
+	<Style x:Key="ContactSupportStyle" TargetType="Button" BasedOn="{StaticResource ButtonStyle}">
+		<Setter Property="FontSize" Value="18" />
+		<Setter Property="Padding" Value="10, 5" />
+	</Style>
+	
+</ResourceDictionary>

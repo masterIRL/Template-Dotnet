@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\ProjectTemplateDotnet.Domain\ProjectTemplateDotnet.Domain.csproj" />
+    <ProjectReference Include="..\..\Core\ProjectTemplateDotnet.Application\ProjectTemplateDotnet.Application.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\ProjectTemplateDotnet.Infrastructure.CrossCutting\ProjectTemplateDotnet.Infrastructure.CrossCutting.csproj" />
+  </ItemGroup>
+
+</Project>
