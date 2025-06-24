@@ -1,0 +1,82 @@
+name-template: "Release $RESOLVED_VERSION"
+tag-template: "v$RESOLVED_VERSION"
+template: |
+  # What's Changed
+
+  $CHANGES
+
+  **Full Changelog**: https://github.com/$OWNER/$REPOSITORY/compare/$PREVIOUS_TAG...v$RESOLVED_VERSION
+
+categories:
+  - title: "⚠️ Breaking"
+    label: "breaking"
+  - title: "🚀 Features"
+    labels:
+      - "feature"
+      - "enhancement"
+  - title: "🐛 Bug Fixes"
+    label: "bug"
+  - title: "🧰 Maintenance"
+    labels:
+      - "maintenance"
+      - "chore"
+      - "refactor"
+      - "test"
+  - title: "📖 Documentation"
+    label: "docs"
+  - title: "Other changes"
+  - title: "⬆️ Dependency Updates"
+    label: "dependencies"
+    collapse-after: 5
+
+version-resolver:
+  major:
+    labels:
+      - "breaking"
+  minor:
+    labels:
+      - "feature"
+  patch:
+    labels:
+      - "bug"
+      - "chore"
+      - "maintenance"
+      - "docs"
+      - "dependencies"
+      - "security"
+  default: patch
+exclude-labels:
+  - "skip-changelog"
+
+autolabeler:
+  - label: "breaking"
+    title:
+      - "(?i)^feat!:.*"
+      - "(?i)^BREAKING CHANGE:.*"
+  - label: "feature"
+    title:
+      - "(?i)^feat:.*"
+  - label: "bug"
+    title:
+      - "(?i)^fix:.*"
+  - label: "chore"
+    title:
+      - "(?i)^chore:.*"
+  - label: "dependencies"
+    title:
+      - "(?i)^deps:.*"
+  - label: "docs"
+    title:
+      - "(?i)^docs:.*"
+  - label: "maintenance"
+    title:
+      - "(?i)^ci:.*"
+  - label: "refactor"
+    title:
+      - "(?i)^refactor:.*"
+  - label: "test"
+    title:
+      - "(?i)^test:.*"
+  - label: "performance"
+    title:
+      - "(?i)^perf:.*"
